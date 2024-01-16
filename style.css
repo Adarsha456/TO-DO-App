@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #dedede;
+    background-color: #231a96;
+    padding: 20px;
+  }
+  
+  #task-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #3f51b5;
+    outline: none;
+  }
+  
+  #task-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3f51b5;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  #task-list {
+    list-style: none;
+  }
+  
+  #task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #3f51b5;
+  }
+  
+  #task-list li:last-child {
+    border-bottom: none;
+  }
+  
+  #task-list li.completed {
+    color: #999999;
+    text-decoration: line-through;
+  }
+  
+  #task-list li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  #clear-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3f51b5;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 480px) {
+    #task-form {
+      flex-direction: column;
+    }
+  
+    #task-input {
+      margin-bottom: 10px;
+    }
+  }
+  
